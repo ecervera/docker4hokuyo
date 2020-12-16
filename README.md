@@ -40,3 +40,7 @@ docker run --rm -it --net=rosnet --name client \
   osrf/ros:kinetic-desktop-full rosrun rviz rviz
 xhost -local:root
 ```
+In rviz:
+- Add a LaserScan
+- Subscribe to topic /scan
+- Set fixed frame to laser
