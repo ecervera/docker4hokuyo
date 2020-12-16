@@ -22,7 +22,7 @@ docker network create -d overlay --attachable rosnet
 
 4. In robot PC
 ```
-docker run --rm -it --net=rosnet --name turtlebot \
+docker run --rm -it --net=rosnet --name pioneer \
   --env ROS_HOSTNAME=pioneer \
   --env ROS_MASTER_URI=http://pioneer:11311 \
   --device=/dev/ttyACM0:/dev/ttyACM0 \
